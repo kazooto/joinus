@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  start_datetime: 2014-02-22 10:16:26
+  end_datetime: 2014-02-22 10:16:26
+  place: MyString
+  content: MyText
+  participation_limit: 1
+
+two:
+  name: MyString
+  start_datetime: 2014-02-22 10:16:26
+  end_datetime: 2014-02-22 10:16:26
+  place: MyString
+  content: MyText
+  participation_limit: 1
