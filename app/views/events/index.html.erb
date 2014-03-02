@@ -18,6 +18,7 @@
   <tbody>
     <% @events.each do |event| %>
       <tr>
+	<td><%= event.user_id %></td>
         <td><%= event.name %></td>
         <td><%= event.start_datetime %></td>
         <td><%= event.end_datetime %></td>
