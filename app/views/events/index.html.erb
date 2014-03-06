@@ -1,6 +1,31 @@
-<h1>Listing events</h1>
+<div class="bs-docs-section">
+  <div class="page-header">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 id="buttons">Listing events</h1></h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8">
+      <p class="bs-component">
+      <% @events.each do |event| %>
+      <div class="panel panel-info">
+	<div class="panel-heading">
+	  <h3 class="panel-title"><%= event.name %></h3>
+	</div>
+	<div class="panel-body">
+	  <%= event.content %>
+	</div>
+	<div class="panel-footer" align="right">Created by <%= event.user_name %></div>
+      </div>
+      <% end %>
+      </p>
+    </div>
+  </div>
+</div>
 
-<table>
+  <table>
   <thead>
     <tr>
       <th>Name</th>
@@ -18,6 +43,7 @@
   <tbody>
     <% @events.each do |event| %>
       <tr>
+	<td><%= event.user_id %></td>
         <td><%= event.name %></td>
         <td><%= event.start_datetime %></td>
         <td><%= event.end_datetime %></td>
@@ -31,7 +57,21 @@
     <% end %>
   </tbody>
 </table>
-
 <br>
 
 <%= link_to 'New Event', new_event_path %>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="holder.js/300x200" alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-primary">...</div>
